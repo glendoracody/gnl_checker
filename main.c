@@ -6,7 +6,7 @@
 /*   By: gcody <gcody@student.21-school.r>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 17:46:07 by gcody             #+#    #+#             */
-/*   Updated: 2019/11/28 15:57:11 by gcody            ###   ########.fr       */
+/*   Updated: 2019/11/28 16:35:05 by gcody            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,8 @@ static void	test_gnl(int ac, char **av)
 			stat = check_stdin();
 		print_test(stat);
 	}
+	free(opts);
+	free(args);
 }
 
 int			main(int ac, char **av)
